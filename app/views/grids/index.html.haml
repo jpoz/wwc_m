@@ -3,4 +3,4 @@
   %h2 Produced by scawymonstur.com
 - @grids.each do |grid|
   %h3= grid.title
-  = grid_table(grid.photos, 13)
+  = partial :grid, :grid => grid

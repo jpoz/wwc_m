@@ -1,0 +1,10 @@
+- columns = 13
+- grid_helper = new_grid_helper(grid.photos, columns)
+%table.grid
+  - grid_helper.each_slice(columns) do |items|
+    %tr
+      - items.each do |item|
+        -unless item == (-1) || item == 0
+          %td{ :colspan => item.width, :rowspan=> item.height}= partial :photo, :item => item
+        -if item == 0
+          %td

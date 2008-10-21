@@ -1,22 +1,10 @@
 module Merb
   module GridsHelper
     
-    def grid_table(array, columns)
+    def new_grid_helper(array, columns)
       @grid = Grid_helper.new(columns)
       @grid.insert(array)
-      output = "<table class='grid'><tr>"
-      @grid.grid.each_with_index do |item, index|
-        #puts item.inspect
-        output += "<td colspan='#{item.width}' rowspan='#{item.height}'>" +
-                    item.to_html +
-                  "</td>" unless item == (-1) || item == 0
-        output += "<td></td>" if item == 0
-        output += "</tr><tr>" if ((index+1) % columns) == 0
-      end
-
-      output += "</tr></table>"
-      #output += @grid.show_grid
-      puts output 
+      @grid.grid
     end
     
     class Grid_helper
