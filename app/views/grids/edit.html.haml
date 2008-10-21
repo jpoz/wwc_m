@@ -1,0 +1,15 @@
+%h1
+  Grids controller, edit action
+%p
+  Edit this file in
+  %tt
+    app/views/grids/edit.html.erb
+= error_messages_for :grid
+
+= form_for(@grid, :action => url(:grid, @grid)) do
+  %p
+    = submit "Update"
+
+= link_to 'Show', url(:grid, @grid)
+|
+= link_to 'Back', url(:grids)

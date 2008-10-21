@@ -1,0 +1,9 @@
+%h1
+  Merb is GREAT!!!
+
+%h2= @photo.title
+%p= @photo.link
+
+= link_to 'Edit',  url(:edit_photo,  @photo)
+|
+= link_to 'Back', url(:photos)

@@ -1,0 +1,19 @@
+%h1
+  Photos controller, edit action
+%p
+  Edit this file in
+  %tt
+    app/views/photos/edit.html.erb
+= error_messages_for :photo
+
+= form_for(@photo, :action => url(:photo, @photo)) do
+  %p
+    = text_field :title, :label => "Title"
+    = text_field :link,  :label => "Link"
+    = text_field :height, :label => "Height"
+    = text_field :width,  :label => "Width"
+    = submit "Update"
+
+= link_to 'Show', url(:photo, @photo)
+|
+= link_to 'Back', url(:photos)

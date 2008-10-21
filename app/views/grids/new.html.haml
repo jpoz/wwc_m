@@ -1,0 +1,14 @@
+%h1 Grids controller, new action
+
+%p 
+  Edit this file in 
+  %tt app/views/grids/new.html.erb
+
+= error_messages_for :grid
+
+= form_for(@grid, :action => url(:grids) ) do
+  %p
+    = text_field :title, :lable => "Title"
+    = submit "Create"
+
+= link_to 'Back', url(:grids)

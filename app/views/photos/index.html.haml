@@ -1,0 +1,20 @@
+%h1
+  Photos controller, index action
+%p
+  Edit this file in
+  %tt
+    app/views/photos/index.html.erb
+%table
+  %tr
+  - for photo in @photos
+    %tr
+      %td
+        = photo.height
+        by
+        = photo.width
+      %td
+        = link_to 'Show', url(:photo, photo)
+      %td
+        = link_to 'Edit', url(:edit_photo,  photo)
+
+= link_to 'New', url(:new_photo)

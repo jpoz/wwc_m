@@ -1,0 +1,6 @@
+#title
+  %h1 Welcome to Wind wind click
+  %h2 Produced by scawymonstur.com
+- @grids.each do |grid|
+  %h3= grid.title
+  = grid_table(grid.photos, 13)

@@ -1,0 +1,38 @@
+body {
+  font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+  font-size: 10px;
+  background-color: #fff;
+	margin 20px;
+}
+html {
+  height: 100%;
+  margin-bottom: 1px;
+}
+
+table.grid {
+	margin: auto;
+	padding: 0;
+	border-collapse: collapse;
+	border: 0;
+}
+
+td {
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+}
+.grid_unit {
+	background-color: #fafafa;
+}
+
+#title {
+	text-align: center;
+	width: 600px;
+	margin: auto;
+	padding-bottom: 20px;
+	
+}
+
+h3 {
+	text-align: center;
+}
