@@ -4,7 +4,7 @@
   - grid_helper.each_slice(columns) do |items|
     %tr
       - items.each do |item|
-        -unless item == (-1) || item == 0
+        -unless item == (-1) || item == 0 || item.nil?
           %td{ :colspan => item.width, :rowspan=> item.height}= partial :photo, :item => item
-        -if item == 0
+        -if item == 0 || item.nil?
           %td

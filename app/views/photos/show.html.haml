@@ -1,8 +1,7 @@
-%h1
-  Merb is GREAT!!!
-
-%h2= @photo.title
-%p= @photo.link
+#title
+  = @photo.score
+  %a{:href => '/grids/'}
+    %img{:src => '/images' + @photo.link + 'full.jpg'}
 
 = link_to 'Edit',  url(:edit_photo,  @photo)
 |

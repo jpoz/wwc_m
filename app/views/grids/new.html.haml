@@ -8,7 +8,9 @@
 
 = form_for(@grid, :action => url(:grids) ) do
   %p
-    = text_field :title, :lable => "Title"
+    = text_field :title, :label => "Title"
+    = text_field :folder, :label => "Photo folder"
+    = text_field :total, :label => "Number of photos"
     = submit "Create"
 
 = link_to 'Back', url(:grids)

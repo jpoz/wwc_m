@@ -29,11 +29,17 @@ class Grids < Application
     raise BadRequest, "No params passed to create a new object, check your new action view!" if params[:grid].nil?
     @grid = Grid.new(params[:grid])
     if @grid.save
+      @grid.total.times do |number|
+        ## AHHHHH refactor me!!!!
+        @grid.photos.create(:title => "Photo #{number+1}", :width => 1, :height => 1, :link => "/photos/#{@grid.folder}/#{number+1}_")
+      end
       redirect url(:grid, @grid)
     else
       render :new
     end
   end
+  
+  
 
   def update
     @grid = Grid.get(params[:id])

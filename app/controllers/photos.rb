@@ -9,6 +9,8 @@ class Photos < Application
   def show
     @photo = Photo.get(params[:id])
     raise NotFound unless @photo
+    @photo.update_attributes(:score => @photo.score + 1)
+    @photo.grid.calculate_sizes
     display @photo
   end
 
