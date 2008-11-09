@@ -1,6 +1,7 @@
 class Grids < Application
   # provides :xml, :yaml, :js
-
+  before :ensure_authenticated, :exclude => [:index, :show]
+  
   def index
     @grids = Grid.all
     display @grids

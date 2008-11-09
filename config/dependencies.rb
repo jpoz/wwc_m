@@ -5,13 +5,13 @@ dm_gems_version   = "0.9.6"
 # For more information about each component, please read http://wiki.merbivore.com/faqs/merb_components
 #dependency "merb-action-args", merb_gems_version
 dependency "merb-assets", merb_gems_version  
-#dependency "merb-cache", merb_gems_version   
+dependency "merb-cache", merb_gems_version   
 dependency "merb-helpers", merb_gems_version 
-#dependency "merb-mailer", merb_gems_version  
+dependency "merb-mailer", merb_gems_version  
 dependency "merb-slices", merb_gems_version  
-#dependency "merb-auth-core", merb_gems_version
-#dependency "merb-auth-more", merb_gems_version
-#dependency "merb-auth-slice-password", merb_gems_version
+dependency "merb-auth-core", merb_gems_version
+dependency "merb-auth-more", merb_gems_version
+dependency "merb-auth-slice-password", merb_gems_version
 dependency "merb-param-protection", merb_gems_version
 dependency "merb-exceptions", merb_gems_version
  
@@ -21,8 +21,6 @@ dependency "dm-migrations", dm_gems_version
 dependency "dm-timestamps", dm_gems_version   
 dependency "dm-types", dm_gems_version        
 dependency "dm-validations", dm_gems_version  
-
-
 
 # #dependency "merb-action-args", "0.9.9"   # Provides support for querystring arguments to be passed in to controller actions
 # dependency "merb-assets", "0.9.9"        # Provides link_to, asset_path, auto_link, image_tag methods (and lots more)
