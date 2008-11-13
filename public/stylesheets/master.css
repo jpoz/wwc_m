@@ -1,12 +1,41 @@
 body {
   font-family: "Lucida Grande", Arial, Verdana, sans-serif;
   font-size: 10px;
-  background-color: #fff;
-	margin 20px;
+  background: url('/images/back.jpg') repeat-x;
+	background-color: #242424;
+	margin: 0px;
+	padding: 0px;
 }
 html {
   height: 100%;
   margin-bottom: 1px;
+}
+
+img {
+	border: 0;
+}
+
+#title {
+	text-align: center;
+	margin: 0px auto;
+	width: 900px;
+	border: 1px solid #141414;
+	background-color: #fff;
+	font-size: 5em;
+}
+
+#content_outter {
+	margin: 150px auto;
+	width: 900px;
+	border: 1px solid #141414;
+	background-color: #fff;
+}
+#main_content {
+	margin: 10px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	border: 1px solid #5C5C5C;
+	background-color: #C9C9C9;
 }
 
 table.grid {
@@ -25,14 +54,19 @@ td {
 	background-color: #fafafa;
 }
 
-#title {
-	text-align: center;
-	width: 600px;
-	margin: auto;
-	padding-bottom: 20px;
-	
-}
-
 h3 {
 	text-align: center;
+}
+
+#photo {
+	text-align: center;
+	margin: auto;
+	width: 700px;
+}
+
+#created_by {
+	text-align: center;
+	display: block;
+	margin: 0px auto;
+	width: 200px;
 }

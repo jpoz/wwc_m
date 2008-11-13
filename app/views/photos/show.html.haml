@@ -1,8 +1,4 @@
-#title
+#photo
   = @photo.score
   %a{:href => '/grids/'}
     %img{:src => '/images' + @photo.link + 'full.jpg'}
-
-= link_to 'Edit',  url(:edit_photo,  @photo)
-|
-= link_to 'Back', url(:photos)
