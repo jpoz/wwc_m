@@ -18,4 +18,8 @@ src/*
 .svn/*
 config/database.yml
 public/images/photos/*
+config/deploy.rb
+Capfile
+config/back_up_deploy.rb
+
 
